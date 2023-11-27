@@ -23,7 +23,7 @@ options:
 ```
 Example of usage:
 ```bash
-or i in $(cat cf_cidrrs.txt);do ./FlexScanner --threads 200 --output json $i --ports 443; done
+for i in $(cat cf_cidrrs.txt);do ./FlexScanner --threads 200 --output json $i --ports 443; done
 
                   
 2023-11-27 16:20:29,949 - ERROR - Error grabbing banner for 1.0.0.101:443: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:992)                                                         
